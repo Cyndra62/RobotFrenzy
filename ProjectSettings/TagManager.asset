@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - Puerta
+  - destruye
   layers:
   - Default
   - TransparentFX

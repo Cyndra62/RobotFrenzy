@@ -15,11 +15,16 @@ public class Player : MonoBehaviour {
 		
 	}
     //Se suman las llaves
-    private void OnTriggerEnter(Collider Key)
+    private void OnTriggerExit(Collider Key)
     {
-        Key.gameObject.tag = ("Key");
-        llaves++;
-        Debug.Log("Numero Llaves: " + llaves);
+        if(Key.gameObject.tag == "Key")
+        {
+            llaves=llaves+1;
+            Debug.Log("Numero Llaves: " + llaves);
+        }
+        
+        
+        
     }
 
     public int getLlaves()

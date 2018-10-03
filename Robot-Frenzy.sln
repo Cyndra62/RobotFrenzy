@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot-Frenzy", "Robot-Frenzy.csproj", "{A97A1D65-5237-CCD5-6143-8F53B5857411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot-Frenzy.Plugins", "Robot-Frenzy.Plugins.csproj", "{DFB70BC5-8338-21B4-FE76-309843C0BB5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robot-Frenzy.Editor.Plugins", "Robot-Frenzy.Editor.Plugins.csproj", "{B4EC5E53-B4D0-022E-9CBE-0CB6AEEBDA6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A97A1D65-5237-CCD5-6143-8F53B5857411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97A1D65-5237-CCD5-6143-8F53B5857411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97A1D65-5237-CCD5-6143-8F53B5857411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97A1D65-5237-CCD5-6143-8F53B5857411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB70BC5-8338-21B4-FE76-309843C0BB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB70BC5-8338-21B4-FE76-309843C0BB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB70BC5-8338-21B4-FE76-309843C0BB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB70BC5-8338-21B4-FE76-309843C0BB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EC5E53-B4D0-022E-9CBE-0CB6AEEBDA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EC5E53-B4D0-022E-9CBE-0CB6AEEBDA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EC5E53-B4D0-022E-9CBE-0CB6AEEBDA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EC5E53-B4D0-022E-9CBE-0CB6AEEBDA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

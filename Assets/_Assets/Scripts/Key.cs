@@ -15,10 +15,14 @@ public class Key : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider player)
+    private void OnTriggerExit(Collider player)
     {
-        Debug.Log("Destruye Llave");
-        player.gameObject.tag = ("Player");
-        Destroy(this.gameObject);       
+        
+        if (player.gameObject.tag == "Player")
+        {
+            Debug.Log("Destruye Llave");
+            Destroy(this.gameObject);
+        }
+              
     }
 }

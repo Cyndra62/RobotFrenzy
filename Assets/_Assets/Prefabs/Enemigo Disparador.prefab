@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 33667361673544066}
   - component: {fileID: 136113353637355678}
   - component: {fileID: 23988775479269046}
+  - component: {fileID: 114149165567165204}
   m_Layer: 0
   m_Name: Enemigo Disparador
   m_TagString: Untagged
@@ -167,7 +168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076888937325144}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.98306566, z: 0.008867266}
+  m_LocalPosition: {x: 0, y: 0.67, z: 0.01}
   m_LocalScale: {x: 0.48766643, y: 0.49584565, z: 1.7205304}
   m_Children:
   - {fileID: 4783111590641586}
@@ -181,7 +182,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1090932065599574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.58}
+  m_LocalPosition: {x: 0, y: -0, z: 1.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4603912057289836}
@@ -194,7 +195,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623322288733720}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.242, z: -0.466}
+  m_LocalPosition: {x: 0, y: 0.242, z: 0.456}
   m_LocalScale: {x: 0.34195223, y: 0.08035902, z: 0.4511193}
   m_Children:
   - {fileID: 4603912057289836}
@@ -413,6 +414,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 1
+--- !u!114 &114149165567165204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781020940447878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca942c36d2f9114e8d5136af755cc7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114183361038581222
 MonoBehaviour:
   m_ObjectHideFlags: 1
