@@ -5,40 +5,37 @@ using UnityEngine;
 public class ExplodeEnemy : MonoBehaviour
 {
 
-    public Transform Player;
+    private Transform player;
     int MoveSpeed = 4;
     [SerializeField] int MaxDist = 10;
     [SerializeField] int MinDist = 1;
 
-
-
-
-    void Start()
+    private void Start()
     {
-
+        player = GameObject.Find("FPSController").transform;
     }
 
     void Update()
     {
-        transform.LookAt(Player);
+        transform.LookAt(player);
 
-        if (Vector3.Distance(transform.position, Player.position) >= MinDist)
+        if (Vector3.Distance(transform.position, player.position) >= MinDist)
         {
 
             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
 
 
-            if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
+            if (Vector3.Distance(transform.position, player.position) <= MaxDist)
             {
                 transform.position += transform.forward * MoveSpeed * Time.deltaTime;
             }
 
         }
 
-        if (Vector3.Distance(transform.position, Player.position) <= MinDist)
+        if (Vector3.Distance(transform.position, player.position) <= MinDist)
         {
-            Destroy(Player.gameObject);
+            Destroy(player.gameObject);
         }
     }
 }

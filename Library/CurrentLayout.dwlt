@@ -136,7 +136,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 100
+  controlID: 9
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,8 +203,8 @@ MonoBehaviour:
     y: 0
     width: 373
     height: 573
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -322,9 +322,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -13.947621, y: -21.1105, z: -6.2517734}
+    m_Target: {x: 43.546, y: -12.668237, z: 135.57785}
     speed: 2
-    m_Value: {x: -13.947621, y: -21.1105, z: -6.2517734}
+    m_Value: {x: 43.546, y: -12.668237, z: 135.57785}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -348,9 +348,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.06185757, y: -0.9064971, z: 0.14287886, w: 0.39245677}
+    m_Target: {x: -0.091461934, y: -0.07191109, z: 0.0066222195, w: -0.99318665}
     speed: 2
-    m_Value: {x: 0.06185757, y: -0.9064971, z: 0.14287886, w: 0.39245677}
+    m_Value: {x: -0.091461934, y: -0.07191109, z: 0.0066222195, w: -0.99318665}
   m_Size:
     m_Target: 91.89282
     speed: 2
@@ -395,23 +395,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44faffff
-    m_LastClickedID: -1468
-    m_ExpandedIDs: b4e1ffff76faffffb0faffffeafaffff12fbffff96fbffff00000000483200004c3200006a320000a2320000e8320000fa320000
+    m_SelectedIDs: ee3effff
+    m_LastClickedID: -49426
+    m_ExpandedIDs: 96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Explosivo (2)
-      m_OriginalName: Explosivo (2)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -620584
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -486,19 +486,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Standard Assets/ParticleSystems/Prefabs
+    - Assets/_Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/ParticleSystems/Prefabs
+  - Assets/_Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\pablo_martos_clases\Robot-Frenzy
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 288}
-    m_SelectedIDs: 682d0000
-    m_LastClickedID: 11624
-    m_ExpandedIDs: 00000000642a0000a02a0000f42a0000162c00009a2c0000062d0000fa2d000024300000fe30000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: e6300000
+    m_LastClickedID: 12518
+    m_ExpandedIDs: 00000000682a0000a42a0000f82a0000162c00009a2c0000062d0000fa2d0000323000000c31000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,7 +526,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000642a0000a02a0000f42a0000162c0000062d0000fa2d000024300000fe300000
+    m_ExpandedIDs: 00000000682a0000a42a0000f82a0000162c00009a2c0000062d0000fa2d0000323000000c310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
