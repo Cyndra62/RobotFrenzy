@@ -23,7 +23,7 @@ public class AllEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bala")
         {
-            Debug.Log("Destruye Llave");
+            Debug.Log("Destruye Enemigo");
             Destroy(this.gameObject);
         }
     }
