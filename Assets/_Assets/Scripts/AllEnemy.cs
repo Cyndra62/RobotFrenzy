@@ -19,6 +19,14 @@ public class AllEnemy : MonoBehaviour
     {
 
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bala")
+        {
+            Debug.Log("Destruye Llave");
+            Destroy(this.gameObject);
+        }
+    }
 }
 
   

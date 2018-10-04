@@ -35,6 +35,11 @@ public class ExplodeEnemy : MonoBehaviour
             }
 
         }
+
+        if (Vector3.Distance(transform.position, Player.position) <= MinDist)
+        {
+            Destroy(Player.gameObject);
+        }
     }
 }
 
