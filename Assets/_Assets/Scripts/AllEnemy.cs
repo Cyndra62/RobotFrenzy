@@ -7,6 +7,7 @@ public class AllEnemy : MonoBehaviour
     bool EstoyVivo = true;
     bool VeoJugador = false;
     bool EstoyRecargando = false;
+    int vida = 3;
 
     // Use this for initialization
     void Start()
@@ -23,9 +24,13 @@ public class AllEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bala")
         {
-            Debug.Log("Destruye Llave");
+            vida--;
+        }
+     if (vida <= 0)
+        {
             Destroy(this.gameObject);
         }
+     
     }
 }
 

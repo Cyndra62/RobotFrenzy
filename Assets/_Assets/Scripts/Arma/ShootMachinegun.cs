@@ -12,13 +12,13 @@ public class ShootMachinegun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             ponerBala();    
         }
     }
 
-    void ponerBala()
+   private void ponerBala()
     {
         Instantiate(bala, transform.position, transform.rotation);
     }

@@ -18,4 +18,11 @@ public class Bala : MonoBehaviour {
     {
         Destroy(this.gameObject);
     }
+    private void OnCollisionExit(Collision collision) {
+        Destroy(this.gameObject);
+    }
+
+    private void OnCollisionStay(Collision collision) {
+        Destroy(this.gameObject);
+    }
 }
