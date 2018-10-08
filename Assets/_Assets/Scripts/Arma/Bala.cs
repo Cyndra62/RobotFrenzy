@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour {
     [SerializeField] int MoveSpeed;
-
+    Collision colision;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,15 +14,29 @@ public class Bala : MonoBehaviour {
 	void Update () {
         transform.position += transform.forward * MoveSpeed * Time.deltaTime;
     }
+    
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject);
+        if(collision.gameObject.tag == "BalaBoss") {
+
+        } else {
+            Destroy(this.gameObject);
+        }
+        
     }
     private void OnCollisionExit(Collision collision) {
-        Destroy(this.gameObject);
+        if (collision.gameObject.tag == "BalaBoss") {
+
+        } else {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnCollisionStay(Collision collision) {
-        Destroy(this.gameObject);
+        if (collision.gameObject.tag == "BalaBoss") {
+
+        } else {
+            Destroy(this.gameObject);
+        }
     }
 }

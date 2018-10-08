@@ -253,7 +253,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Assets\Scripts\Arma\Armas.cs" />
     <Compile Include="Assets\_Assets\Scripts\Arma\Bala.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Arma\Francotirador.cs" />
     <Compile Include="Assets\_Assets\Scripts\Arma\ShootMachinegun.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\AllEnemy.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\EnemyWeapons.cs" />

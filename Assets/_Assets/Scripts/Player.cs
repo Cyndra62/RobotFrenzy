@@ -3,19 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    private const int NUM_ARMAS = 2;
     [SerializeField] public static int llaves = 0;
-    int vida;
+    [SerializeField] int vida=3;
     int vidaMaxima;
-    //Arma[] armas;
+    [SerializeField]GameObject[] armas = new GameObject [NUM_ARMAS];
     
 	// Use this for initialization
 	void Start () {
-		
+       
+        for(int i =0; i < NUM_ARMAS; i++) {
+            armas[i].SetActive(false);
+        }
+
+        armas[0].SetActive(true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKeyDown("1")) {
+            armas[0].SetActive(true);
+            armas[1].SetActive(false);
+        }else if (Input.GetKeyDown("2")) {
+            armas[1].SetActive(true);
+            armas[0].SetActive(false);
+        }
 	}
     //Se suman las llaves
     private void OnTriggerExit(Collider Key)

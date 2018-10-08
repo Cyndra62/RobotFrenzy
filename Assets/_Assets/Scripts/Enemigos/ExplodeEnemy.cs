@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ExplodeEnemy : MonoBehaviour 
-{
+public class ExplodeEnemy : MonoBehaviour {
 
     private Transform player;
-    int MoveSpeed = 4;
+    [SerializeField] int MoveSpeed = 4;
     [SerializeField] int MaxDist = 30;
     [SerializeField] int MinDist = 10;
 
