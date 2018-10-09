@@ -560,6 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 4209072197508226, guid: 4d8ab410d418daf4f824afe63869d84c, type: 2}
   cadencia: 2
+  tiempo: 0
   MaxDist: 20
   MinDist: 0
 --- !u!114 &114149165567165204
@@ -626,10 +627,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.5711746
+  m_Height: 2.6492
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.15200076, z: 0.017227173}
 --- !u!136 &136521428070478462
 CapsuleCollider:
   m_ObjectHideFlags: 1

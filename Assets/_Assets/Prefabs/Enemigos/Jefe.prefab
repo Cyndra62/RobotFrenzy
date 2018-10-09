@@ -1348,7 +1348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 10
-  MaxDist: 20
+  MaxDist: 22
   MinDist: 1
   muertePartic: {fileID: 400010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
   speed: 0
@@ -1366,6 +1366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 4209072197508226, guid: 4d8ab410d418daf4f824afe63869d84c, type: 2}
   cadencia: 1
+  tiempo: 0
   MaxDist: 20
   MinDist: 1
 --- !u!114 &114656687226254998
@@ -1406,6 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 4209072197508226, guid: 4d8ab410d418daf4f824afe63869d84c, type: 2}
   cadencia: 1
+  tiempo: 0
   MaxDist: 20
   MinDist: 1
 --- !u!135 &135344287428851304

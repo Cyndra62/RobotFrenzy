@@ -264,6 +264,7 @@
     <Compile Include="Assets\_Assets\Scripts\Player.cs" />
     <Compile Include="Assets\_Assets\Scripts\Puerta.cs" />
     <Compile Include="Assets\_Assets\Scripts\Rompepuerta.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -272,6 +273,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scr.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

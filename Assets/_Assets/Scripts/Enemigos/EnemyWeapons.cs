@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyWeapons : MonoBehaviour {
     [SerializeField] Transform bala;
     [SerializeField] float cadencia =2;
-    float tiempo = 0;
+    [SerializeField] float tiempo = 0;
     [SerializeField] int MaxDist = 30;
     [SerializeField] int MinDist = 10;
     // Use this for initialization

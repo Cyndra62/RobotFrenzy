@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 136725931436704680}
   m_Layer: 0
   m_Name: Proyectil Franco
-  m_TagString: Bala
+  m_TagString: Franco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2818c6d170004934d8d83bd9e052a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 50
+  MoveSpeed: 100
 --- !u!136 &136725931436704680
 CapsuleCollider:
   m_ObjectHideFlags: 1

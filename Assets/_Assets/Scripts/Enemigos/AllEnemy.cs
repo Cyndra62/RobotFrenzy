@@ -44,9 +44,13 @@ public class AllEnemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bala") {
             recibirDanyo(1);
+        }
+        if (collision.gameObject.tag =="Franco") {
+            recibirDanyo(3);
+
         } else {
-            float rotacion = Random.Range(0f, 360f);
-            transform.eulerAngles = new Vector3(0, rotacion, 0);
+
+            RotarAleatoriamente();
 
         }
         
@@ -62,6 +66,12 @@ public class AllEnemy : MonoBehaviour
         //¿Recompensa?
 
         
+    }
+
+    private void RotarAleatoriamente()
+    {
+        float rotacion = Random.Range(0f, 360f);
+        transform.eulerAngles = new Vector3(0, rotacion, 0);
     }
 
     public void recibirDanyo(int danyo) {

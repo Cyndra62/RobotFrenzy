@@ -1,17 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
     private const int NUM_ARMAS = 2;
     [SerializeField] public static int llaves = 0;
     [SerializeField] int vida=3;
-    int vidaMaxima;
+    [SerializeField] private Text marcadorVida;
+    [SerializeField] private Text marcadorLlaves;
+    int vidaMaxima = 3;
     [SerializeField]GameObject[] armas = new GameObject [NUM_ARMAS];
-    
-	// Use this for initialization
-	void Start () {
-       
+    private AudioSource source;
+    [SerializeField] AudioClip damage;
+
+    // Use this for initialization
+    void Start () {
+        source = GetComponent<AudioSource>();
+
         for(int i =0; i < NUM_ARMAS; i++) {
             armas[i].SetActive(false);
         }
@@ -28,7 +35,8 @@ public class Player : MonoBehaviour {
             armas[1].SetActive(true);
             armas[0].SetActive(false);
         }
-	}
+        marcadorLlaves.text = "Llaves:" + llaves;
+    }
     //Se suman las llaves
     private void OnTriggerExit(Collider Key)
     {
@@ -51,8 +59,9 @@ public class Player : MonoBehaviour {
     }
 
     public void recibirDanyo(int danyo) {
-
+        source.PlayOneShot(damage, 1);
         vida = vida - danyo;
+        ActualizarVida();
         if (vida <= 0) {
             vida = 0;
             Morir();
@@ -65,6 +74,12 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.tag == "BalaBoss") {
             recibirDanyo(1);
         }
+
+    }
+
+    void ActualizarVida()
+    {
+        marcadorVida.text = "Vida:" + vida;
 
     }
 }
