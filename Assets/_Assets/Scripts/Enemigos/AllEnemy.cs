@@ -42,17 +42,20 @@ public class AllEnemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Bala") {
+        if(collision.gameObject.tag == "Bala") 
+            {
             recibirDanyo(1);
-        }
-        if (collision.gameObject.tag =="Franco") {
+            }
+
+        if (collision.gameObject.tag =="Franco") 
+            {
             recibirDanyo(3);
+            }
 
-        } else {
-
+        if (collision.gameObject.tag != "Franco" && collision.gameObject.tag != "Bala") 
+            {
             RotarAleatoriamente();
-
-        }
+            }
         
     }
 

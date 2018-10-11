@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ExplodeEnemy : MonoBehaviour {
 
@@ -9,6 +9,7 @@ public class ExplodeEnemy : MonoBehaviour {
     [SerializeField] int MoveSpeed = 4;
     [SerializeField] int MaxDist = 30;
     [SerializeField] int MinDist = 10;
+
 
     private void Start()
     {
@@ -28,7 +29,9 @@ public class ExplodeEnemy : MonoBehaviour {
 
         if (Vector3.Distance(transform.position, player.position) <= MinDist)
         {
+            Player.llaves = 0;
             Destroy(player.gameObject);
+            SceneManager.LoadScene(0);
         }
     }
 }

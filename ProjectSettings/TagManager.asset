@@ -12,6 +12,9 @@ TagManager:
   - Fire
   - BalaBoss
   - Franco
+  - Spawner
+  - Moneda
+  - Life
   layers:
   - Default
   - TransparentFX
