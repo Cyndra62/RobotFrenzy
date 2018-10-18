@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
-    private const int NUM_ARMAS = 3;
+    private const int NUM_ARMAS = 4;
     [SerializeField] public static int llaves = 0;
     [SerializeField] int vida = 3;
     [SerializeField] private Text marcadorVida;
     [SerializeField] private Text marcadorLlaves;
+    [SerializeField] private Text final;
+    [SerializeField] private Text cuchillos;
     int vidaMaxima = 3;
     [SerializeField] GameObject[] armas = new GameObject[NUM_ARMAS];
     private AudioSource source;
@@ -18,6 +20,8 @@ public class Player : MonoBehaviour {
     [SerializeField] float cadencia;
     [SerializeField] GameObject bomba;
     [SerializeField] GameObject lanzabombas;
+    [SerializeField] GameObject cuchillo;
+    public static int num_cuchillos = 3;
     float tempobomba;
     // Use this for initialization
     void Start() {
@@ -43,14 +47,26 @@ public class Player : MonoBehaviour {
             armas[0].SetActive(false);
         }
         if (tiempo > cadencia) {
-            if (Input.GetMouseButtonDown(1)) {
+            if (Input.GetKeyDown("q")) {
                 armas[2].SetActive(true);
-            } else if (Input.GetMouseButtonUp(1)) {
+            } else if (Input.GetKeyUp("q")) {
                 Invoke("Lanzagranada", 0.02f);
                 tiempo = 0;
                 armas[2].SetActive(false);
             }
         }
+        if (Input.GetKeyDown("e")&&num_cuchillos>0) {
+            armas[3].SetActive(true);
+            
+        } else if (Input.GetKeyUp("e") && num_cuchillos > 0) {
+            Invoke("Lanzacuchillo", 0.02f);
+            num_cuchillos--;
+            cuchillos.text = "Cuchillos:"+num_cuchillos;
+            
+            armas[3].SetActive(false);
+        }
+        cuchillos.text = "Cuchillos:" + num_cuchillos;
+
 
         marcadorLlaves.text = "Llaves:" + llaves;
     }
@@ -65,13 +81,32 @@ public class Player : MonoBehaviour {
             vida = vidaMaxima;
             ActualizarVida();
         }
+        if (Key.gameObject.tag == "Moneda") {
+            final.text = "Press F to pay Respect";
+            
+        }
+        
 
+    }
+    private void OnTriggerStay(Collider other) {
+        if (other.gameObject.tag == "Moneda") {
+            
+            finPartida();
+        }
+    }
+    private void OnTriggerExit(Collider other) {
+
+        final.text = "";
     }
 
     public void Lanzagranada(){
 
         Instantiate(bomba, lanzabombas.transform.position, lanzabombas.transform.rotation);
 
+    }
+
+    public void Lanzacuchillo() {
+        Instantiate(cuchillo, lanzabombas.transform.position, lanzabombas.transform.rotation);
     }
 
     public void CambiarArma() {
@@ -113,4 +148,14 @@ public class Player : MonoBehaviour {
         marcadorVida.text = "Vida:" + vida;
 
     }
+
+    private void finPartida() {
+        while (Input.GetKeyDown("f")) {
+            Debug.Log("Pulsa botón f");
+            Destroy(this.gameObject);
+            SceneManager.LoadScene(0);
+        }
+    }
 }
+
+

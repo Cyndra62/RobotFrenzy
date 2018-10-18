@@ -254,9 +254,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Assets\Scripts\Arma\Bala.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Arma\Cuchillo.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Arma\DeleteDamageArea.cs" />
     <Compile Include="Assets\_Assets\Scripts\Arma\Francotirador.cs" />
     <Compile Include="Assets\_Assets\Scripts\Arma\Granada.cs" />
-    <Compile Include="Assets\_Assets\Scripts\Arma\Lanzagranada.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Arma\Lanzacuchillo.cs" />
     <Compile Include="Assets\_Assets\Scripts\Arma\ShootMachinegun.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\AllEnemy.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\Creabichos.cs" />
@@ -264,6 +266,7 @@
     <Compile Include="Assets\_Assets\Scripts\Enemigos\ExplodeEnemy.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\Hitbot.cs" />
     <Compile Include="Assets\_Assets\Scripts\Enemigos\Spawner.cs" />
+    <Compile Include="Assets\_Assets\Scripts\Funcionalidades\Plataformas.cs" />
     <Compile Include="Assets\_Assets\Scripts\Funcionalidades\Player.cs" />
     <Compile Include="Assets\_Assets\Scripts\Funcionalidades\Puerta.cs" />
     <Compile Include="Assets\_Assets\Scripts\Funcionalidades\Rompepuerta.cs" />

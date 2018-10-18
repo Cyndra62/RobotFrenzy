@@ -58,8 +58,13 @@ public class AllEnemy : MonoBehaviour
             }
         
     }
+    private void OnTriggerStay(Collider other) {
+        if(other.gameObject.tag == "Bomb") {
+            recibirDanyo(5);
+        }
+    }
 
-    
+
     public void Morir() {
         EstoyVivo = false;
         //Particulas

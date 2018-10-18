@@ -6,6 +6,7 @@ public class Granada : MonoBehaviour {
     private Rigidbody rb;
     [SerializeField] float fuerza;
     [SerializeField] GameObject explosion;
+    [SerializeField] GameObject damages;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -18,6 +19,7 @@ public class Granada : MonoBehaviour {
 	}
     private void OnCollisionEnter(Collision collision) {
         Instantiate(explosion, transform.position, transform.rotation);
+        Instantiate(damages, transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
 }

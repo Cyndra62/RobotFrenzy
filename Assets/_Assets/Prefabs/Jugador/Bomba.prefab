@@ -279,6 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuerza: 750
   explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  damages: {fileID: 1237567778514844, guid: f675b59d4827bd14183864f623baf20b, type: 2}
 --- !u!135 &135562122739314632
 SphereCollider:
   m_ObjectHideFlags: 1

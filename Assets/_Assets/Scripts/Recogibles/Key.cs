@@ -19,7 +19,7 @@ public class Key : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         contador = contador + Time.deltaTime;
-        Debug.Log(contador);
+        
         transform.Rotate( 0,1,0 + RotationSpeed *Time.deltaTime) ;
 
         if (contador >= 0 && contador <= 0.5 ) {

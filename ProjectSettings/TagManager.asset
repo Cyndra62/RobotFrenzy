@@ -15,6 +15,7 @@ TagManager:
   - Spawner
   - Moneda
   - Life
+  - Bomb
   layers:
   - Default
   - TransparentFX

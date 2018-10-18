@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,7 +18,7 @@ public class Premio : MonoBehaviour {
 
     private void OnCollisionEnter(Collision player) {
         Debug.Log(player.gameObject.tag);
-        if (player.gameObject.tag == "Player"&& player.gameObject.tag == "MainCamera") {
+        if (player.gameObject.tag == "Player") {
             Debug.Log("Destruye premio");
             SceneManager.LoadScene(0);
         }
